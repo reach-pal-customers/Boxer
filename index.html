@@ -1,197 +1,66 @@
-<html>
-<head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My One-Page Website</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        header {
             background-color: #333;
             color: white;
-            padding: 20px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .navbar a:hover {
-            color: orange;
-        }
-
-        .logo {
-            font-weight: bold;
-            font-size: 24px;
-        }
-
-        .banner {
-            height: 500px;
-            background-image: url("gym.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .banner h1 {
-            color: white;
-            font-size: 48px;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .section {
-            padding: 40px;
-        }
-
-        .section h2 {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 1rem;
         }
 
-        .section p {
-            text-align: justify;
-            line-height: 1.5;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .card {
-            width: 30%;
-            margin: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .card-text {
-            text-align: justify;
-            line-height: 1.5;
-        }
-
-        .card-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: orange;
-            color: white;
+        section {
+            padding: 2rem;
             text-align: center;
-            text-decoration: none;
-            margin-top: 10px;
         }
 
-        .card-button:hover {
-            background-color: darkorange;
-        }
-
-        .footer {
+        footer {
             background-color: #333;
             color: white;
-            padding: 20px;
             text-align: center;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .footer a:hover {
-            color: orange;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">The Power Room</div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="banner">
-            <h1>Get Fit, Stay Healthy</h1>
-        </div>
-        <div class="section">
-            <h2>Welcome to The Power Room</h2>
-            <p>The Power Room is a gym and fitness center that offers a variety of services and facilities to help you achieve your fitness goals. Whether you want to lose weight, build muscle, improve your endurance, or just have fun, we have something for you. Our gym is equipped with modern machines, free weights, cardio equipment, and a functional training area. We also have a team of professional trainers who can guide you and motivate you along the way. You can also join our group classes, such as yoga, pilates, zumba, aerobics, and more. No matter what your fitness level or preference, we have a program that suits you.</p>
-        </div>
-        <div class="section">
-            <h2>Our Services</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="personal-training.jpg" alt="Personal Training">
-                    <div class="card-body">
-                        <div class="card-title">Personal Training</div>
-                        <div class="card-text">If you want to get the most out of your workout, you can hire one of our personal trainers who will design a customized plan for you, based on your goals, needs, and abilities. They will also monitor your progress, provide feedback, and adjust your plan as needed.</div>
-                        <a href="#" class="card-button">Learn More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="group-classes.jpg" alt="Group Classes">
-                    <div class="card-body">
-                        <div class="card-title">Group Classes</div>
-                        <div class="card-text">If you enjoy working out with others, you can join our group classes, where you can have fun and socialize while exercising. We offer a variety of classes, such as yoga, pilates, zumba, aerobics, and more. Our instructors are friendly and experienced, and they will make sure you have a great time.</div>
-                        <a href="#" class="card-button">Learn More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="nutrition.jpg" alt="Nutrition">
-                    <div class="card-body">
-                        <div class="card-title">Nutrition</div>
-                        <div class="card-text">Fitness is not only about working out, but also about eating right. That's why we offer nutrition counseling and meal plans to help you optimize your diet and fuel your body. Our nutritionists will assess your current eating habits, and give you advice and recommendations on how to improve them.</div>
-                        <a href="#" class="card-button">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="logo">The Power Room</div>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="copy">© 2023 The Power Room. All rights reserved.</div>
-        </div>
-    </div>
+    <header>
+        <h1>Welcome to My One-Page Website</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am a web developer passionate about creating amazing websites. This is my one-page website showcasing my skills and projects.</p>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li>Project 1: Description of Project 1</li>
+            <li>Project 2: Description of Project 2</li>
+            <li>Project 3: Description of Project 3</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact us</p>
+    </footer>
 </body>
+
 </html>
+`
